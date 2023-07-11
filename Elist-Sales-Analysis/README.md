@@ -1,6 +1,6 @@
 In this data analysis project, I examined key metrics within sales data to draw out insights on the overall performance of Elist and provide data-driven recommendations.
 
-The main metrics I focused on were sales revenue, average order value (AOV), and order counts. I worked with these metrics to analyze and break down overall sales trends, product performance, effectiveness of their loyalty program, as well as other relevant areas of the business.
+The main metrics I focused on were sales revenue, average order value (AOV), and order counts. I worked with these metrics to analyze and break down overall sales trends, product performance, effectiveness of their loyalty program, as well as other relevant areas of the business. <br><br>
 
 **Overall Sales Trends**
 Total Sales                |  AOV and Orders           | Sales by Month
@@ -9,8 +9,7 @@ Total Sales                |  AOV and Orders           | Sales by Month
 
 In 2019, the initial year of sales records, Elist generated $3.26 million in sales. In the following year, the company observed a significant growth in revenue, generating $8.62 million in sales for 2020, more than doubling the revenue of the previous year's sales.
 
-Analyzing the quarterly breakdown of revenue data reveals a peak in Q4 of 2020, where sales generated $2.5 million for just that quarter. Following this period of substantial growth, there has been a gradual decrease in revenue generated from sales. 
-
+Analyzing the quarterly breakdown of revenue data reveals a peak in Q4 of 2020, where sales generated $2.5 million for just that quarter. Following this period of substantial growth, there has been a gradual decrease in revenue generated from sales. <br><br>
 
 **Product Performance**
 Product Orders             |  Product Revenue          |
@@ -19,7 +18,7 @@ Product Orders             |  Product Revenue          |
 
 Looking at the order count of products sold by Elist, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst performing product sold was the Bose Soundsport Headphones, making up less than .03% of all orders made through Elist.
 
-Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Elist, making 22% of orders made. However, it has generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales.
+Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Elist, making 22% of orders made. However, it has generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
 
 **Loyalty Program**
 Sales, AOV, and Orders by Loyalty Membership|
