@@ -61,6 +61,6 @@ Quarters are conditionally formatted on the order count of each purchase platfor
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
-# Additonal Notes
+# Additional Notes
 
 
