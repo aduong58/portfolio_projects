@@ -56,7 +56,7 @@ Quarters are conditionally formatted on the order count of each purchase platfor
 - I would recommend considering streamlining product offerings and investing more in products that bring in the most orders and profit. With more data on product costs we could better understand the profitablity and overall performance of each product.
 
 **Loyalty Program**
-- Seeing the growth of Elist's loyalty program within the recent years of sales, I would recommend keeping the loyalty program and looking at what is drawing customers to join.
+- Seeing the growth and performance of Elist's loyalty program within the recent years of sales, I would recommend keeping the loyalty program and looking closer at what is drawing customers to the program.
 - Things I would consider are the awareness/marketing of the loyalty program, associated incentives and rewards of being a member, and alignment of the loyalty program with the Elist's overall business goals.
 
 **Purchase Platform and Marketing Channels**
