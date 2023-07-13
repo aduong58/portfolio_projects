@@ -1,10 +1,14 @@
 # Project - Elist Sales Analysis
-Founded in 2018, Elist is an e-commerce company that sells popular electronics products and has since expanded to a global customer base. The company maintains a core dataset consisting of orders, order statuses, customers, products, and geographic information. 
+Founded in 2018, Elist is an e-commerce company that sells popular electronics products and has since expanded to a global customer base. 
 
-
-In this data analysis project, I examined key metrics within sales data to draw out insights on the overall performance of Elist and provide data-driven recommendations.
+In this data analysis project, I examined key metrics within sales data to draw out insights on the overall performance of Elist and provide data-driven recommendations in the areas of sales, product, marketing, and operations.
 
 The main metrics I focused on were sales revenue, average order value (AOV), and order counts. I worked with these metrics to analyze and break down overall sales trends, product performance, effectiveness of their loyalty program, as well as other relevant areas of the business. <br><br>
+
+# About the data
+The company maintains a core dataset consisting of orders, order statuses, customers, products, and geographic information. 
+
+Documentation on the cleaning and preparation of the data can be found **here**
 
 
 # Technical Analysis
@@ -38,7 +42,7 @@ Quarters are highlighted where sales, AOV, and order count perform better in eit
 
 In the early years of the loyalty program, the program was not performing as well as the orders made by regular customers. However, in more recent years, sales generated from members of the loyalty program have begun to outpace that of regular customers in various sales metrics.
 
-In 2021 and beyond, members of the loyalty program have placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In addition to this, in 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212. <br><br>
+In 2021 and beyond, members of the loyalty program placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In addition to this, in 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212. <br><br>
 
 **Purchase Platform and Marketing Channels**
 Orders by Purchase Platform|  Orders by Marketing Channel          |
@@ -57,7 +61,7 @@ Quarters are conditionally formatted on the order count of each purchase platfor
 
 **Loyalty Program**
 - Seeing the growth and performance of Elist's loyalty program within the recent years of sales, I would recommend keeping the loyalty program and looking closer at what is drawing customers to the program.
-- Things I would consider are the awareness/marketing of the loyalty program, associated incentives and rewards of being a member, and alignment of the loyalty program with the Elist's overall business goals.
+- Things I would consider are the awareness/marketing of the loyalty program, associated incentives and rewards of being a member, and alignment of the loyalty program with Elist's overall business goals.
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
