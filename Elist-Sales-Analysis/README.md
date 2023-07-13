@@ -8,7 +8,7 @@ The main metrics I focused on were sales revenue, average order value (AOV), and
 
 
 # Technical Analysis
-The analysis portion of this project was done within Excel. To summarize insights and segment the data into different categories, I chose to use pivot tables alongside conditional formatting.
+The analysis portion of this project was done within Excel. To summarize insights and segment the data into different categories, I chose to use pivot tables alongside conditional formatting. Throughout the project I utilized aggregation functions to clean the data and calculate new fields.
 
 **Overall Sales Trends**
 Total Sales                |  AOV and Orders           | Sales by Month
@@ -38,11 +38,29 @@ Quarters are highlighted where sales, AOV, and order count perform better in eit
 
 In the early years of the loyalty program, the program was not performing as well as the orders made by regular customers. However, in more recent years, sales generated from members of the loyalty program have begun to outpace that of regular customers in various sales metrics.
 
-In 2021 and beyond, members of the loyalty program have placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In addition to this, in 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212.
+In 2021 and beyond, members of the loyalty program have placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In addition to this, in 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212. <br><br>
+
+**Purchase Platform and Marketing Channels**
+Orders by Purchase Platform|  Orders by Marketing Channel          |
+:-------------------------:|:-------------------------:|
+![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | ![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) 
+Quarters are conditionally formatted on the order count of each purchase platform.  | Quarters are conditionally formatted on the order count of each purchase platform. 
 
 
 # Recommendations
 
+**Overall Sales Trends**
+- Sales are plummeting, we should work on identifying our core customer base and focusing efforts to retain that customer base.
+
+**Product Performance**
+- I would recommend considering streamlining product offerings and investing more in products that bring in the most orders and profit. With more data on product costs we could better understand the profitablity and overall performance of each product.
+
+**Loyalty Program**
+- Seeing the growth of Elist's loyalty program within the recent years of sales, I would recommend keeping the loyalty program and looking at what is drawing customers to join.
+- Things I would consider are the awareness/marketing of the loyalty program, associated incentives and rewards of being a member, and alignment of the loyalty program with the Elist's overall business goals.
+
+**Purchase Platform and Marketing Channels**
+- In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
 # Additonal Notes
 
 
