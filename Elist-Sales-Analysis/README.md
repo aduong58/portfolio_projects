@@ -1,7 +1,7 @@
-# Project - Elist Sales Analysis
-Founded in 2018, Elist is an e-commerce company that sells popular electronics products and has since expanded to a global customer base. 
+# Project - Nexus Sales Analysis
+Founded in 2018, Nexus is an e-commerce company that sells popular electronics products and has since expanded to a global customer base. 
 
-In this data analysis project, I examined key metrics within sales data to draw out insights on the overall performance of Elist and provide data-driven recommendations in the areas of sales, product, marketing, and operations.
+In this data analysis project, I examined key metrics within sales data to draw out insights on the overall performance of Nexus and provide data-driven recommendations in the areas of sales, product, marketing, and operations.
 
 The main metrics I focused on were sales revenue, average order value (AOV), and order counts. I worked with these metrics to analyze and break down overall sales trends, product performance, effectiveness of their loyalty program, as well as other relevant areas of the business. <br>
 
@@ -21,7 +21,7 @@ Total Sales                |  AOV and Orders           | Sales by Month
 :-------------------------:|:-------------------------:|:-------------------------:
 ![sales_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/d2b7c9b6-3f8e-4533-9e65-d8a725d675d8)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) | ![sales_by_month](https://github.com/aduong58/portfolio_projects/assets/58454640/187f8f2d-20d2-40b8-b6bf-83b28671a29d)
 
-In 2019, the initial year of sales records, Elist generated $3.26 million in sales. In the following year, the company observed a significant growth in revenue, generating $8.62 million in sales for 2020, more than doubling the revenue of the previous year's sales.
+In 2019, the initial year of sales records, Nexus generated $3.26 million in sales. In the following year, the company observed a significant growth in revenue, generating $8.62 million in sales for 2020, more than doubling the revenue of the previous year's sales.
 
 Analyzing the quarterly breakdown of revenue data reveals a peak in Q4 of 2020, where sales generated $2.5 million for just that quarter. Following this period of substantial growth, there has been a gradual decrease in revenue generated from sales. <br><br>
 
@@ -31,9 +31,9 @@ Product Orders             |  Product Revenue          |
 :-------------------------:|:-------------------------:|
 ![product_orders](https://github.com/aduong58/portfolio_projects/assets/58454640/6645e614-967a-46e3-a1b1-9d7e6aee1052)  |  ![product_sales](https://github.com/aduong58/portfolio_projects/assets/58454640/e3dc502d-2199-4355-ad5a-185759e8184b) 
 
-Looking at the order count of products sold by Elist, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst performing product sold was the Bose Soundsport Headphones, making up just .03% of all orders made through Elist.
+Looking at the order count of products sold by Nexus, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst performing product sold was the Bose Soundsport Headphones, making up just .03% of all orders made through Nexus.
 
-Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Elist, making up 22% of orders made. However, it has generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
+Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Nexus, making up 22% of orders made. However, it has generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
 
 
 **Loyalty Program**
@@ -64,8 +64,8 @@ The main purchase platform for orders continues to be our desktop website accoun
 - I would recommend considering streamlining product offerings and investing more in products that bring in the most orders and profit. With more data on product costs we could better understand the profitablity and overall performance of each product.
 
 **Loyalty Program**
-- Seeing the growth and performance of Elist's loyalty program within the recent years of sales, I would recommend keeping the loyalty program and looking closer at what is drawing customers to the program.
-- Things I would consider are the awareness/marketing of the loyalty program, associated incentives and rewards of being a member, and alignment of the loyalty program with Elist's overall business goals.
+- Seeing the growth and performance of Nexus's loyalty program within the recent years of sales, I would recommend keeping the loyalty program and looking closer at what is drawing customers to the program.
+- Things I would consider are the awareness/marketing of the loyalty program, associated incentives and rewards of being a member, and alignment of the loyalty program with Nexus's overall business goals.
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
