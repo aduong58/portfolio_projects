@@ -7,6 +7,8 @@ The main metrics I focused on were sales revenue, average order value (AOV), and
 
 # About the data
 The company maintains a core dataset consisting of orders, order statuses, customers, products, and geographic information. 
+<img src="https://github.com/aduong58/portfolio_projects/assets/58454640/423c131b-b605-4921-af29-fa584290e955" width=80% height=80%>
+
 
 Documentation on the cleaning and preparation of the data can be found **here**
 
@@ -33,7 +35,7 @@ Product Orders             |  Product Revenue          |
 
 Looking at the order count of products sold by Nexus, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst performing product sold was the Bose Soundsport Headphones, making up just .03% of all orders made through Nexus.
 
-Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Nexus, making up 22% of orders made. However, it has generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
+Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Nexus, making up 22% of orders made. It has also generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
 
 
 **Loyalty Program**
@@ -57,18 +59,21 @@ The main purchase platform for orders continues to be our desktop website accoun
 
 # Recommendations
 
-**Overall Sales Trends**
-- Sales are plummeting, we should work on identifying our core customer base and focusing efforts to retain that customer base.
+**Overall Sales**
+- In response to the recent decline in sales, I would recommend working to identify our core customer base and focusing efforts to retain that segment of customers. Looking at the loyalty program could be a good direction to start.
 
 **Product Performance**
-- I would recommend considering streamlining product offerings and investing more in products that bring in the most orders and profit. With more data on product costs we could better understand the profitablity and overall performance of each product.
+- I would recommend investing more in products that have historically generated the most revenue and orders (Apple Airpods & 4K Gaming Monitors) for Nexus.
+- I also would consider discontinuing low performance products like the Bose SoundSport Headphones to streamline product offerings.
 
 **Loyalty Program**
-- Seeing the growth and performance of Nexus's loyalty program within the recent years of sales, I would recommend keeping the loyalty program and looking closer at what is drawing customers to the program.
-- Things I would consider are the awareness/marketing of the loyalty program, associated incentives and rewards of being a member, and alignment of the loyalty program with Nexus's overall business goals.
+- Seeing the growth and performance of Nexus' loyalty program within the recent years of sales, I would recommend keeping the loyalty program and taking a closer look at what has been drawing customers to the program.
+- Things I would consider are the awareness/marketing of the loyalty program, associated incentives of being a member, as well as alignment of the loyalty program with the overall business goals of Nexus.
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
 # Additional Notes
+- Covid technology sales could be a factor in initial sales highs -> recent years of sales tapering into true sales
+- Given more data on product costs, we would be able to add profitability to our analysis and better understand the overall performance of different products.
 
 
