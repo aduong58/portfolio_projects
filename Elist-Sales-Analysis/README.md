@@ -6,7 +6,7 @@ In this data analysis project, I examined key metrics within sales data to draw 
 The main metrics I focused on were sales revenue, average order value (AOV), and order counts. I worked with these metrics to analyze and break down overall sales trends, product performance, effectiveness of their loyalty program, as well as other relevant areas of the business. <br>
 
 # About the data
-The company maintains a core dataset consisting of orders, order statuses, customers, products, and geographic information. 
+The company maintains a core dataset consisting of orders, customers, products, and geographic information. 
 <img src="https://github.com/aduong58/portfolio_projects/assets/58454640/423c131b-b605-4921-af29-fa584290e955" width=80% height=80%>
 
 
@@ -44,7 +44,7 @@ Sales, AOV, and Orders by Loyalty Membership|
 ![loyalty_program](https://github.com/aduong58/portfolio_projects/assets/58454640/73b8ea18-2cb8-490a-a426-22c37056fd07)  
 Quarters are highlighted where sales, AOV, and order count perform better in either group (Loyalty vs. Non-Loyalty) |  
 
-In the early years of the loyalty program, the program was not performing as well as the orders made by regular customers. However, in more recent years, sales generated from members of the loyalty program have begun to outpace that of regular customers in various sales metrics.
+In the early years of the loyalty program, the program was not performing as well as the orders made by regular customers. However, in more recent years, sales generated from members of the loyalty program have begun to outpace that of regular customers in various metrics.
 
 In 2021 and beyond, members of the loyalty program placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In addition to this, in 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212. <br><br>
 
