@@ -9,7 +9,6 @@ The main metrics I focused on were sales revenue, average order value (AOV), and
 The company maintains a core dataset consisting of orders, customers, products, and geographic information. 
 <img src="https://github.com/aduong58/portfolio_projects/assets/58454640/423c131b-b605-4921-af29-fa584290e955" width=80% height=80%>
 
-
 Documentation on the cleaning and preparation of the data can be found **here**
 
 The workbook containing the original dataset and created tables can be found **here**
@@ -49,10 +48,10 @@ In the early years of the loyalty program, the program was not performing as wel
 In 2021 and beyond, members of the loyalty program placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In addition to this, in 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212. <br><br>
 
 **Purchase Platform and Marketing Channels**
-Orders by Purchase Platform|  Orders by Marketing Channel          |
+Orders by Purchase Platform|  Orders, Revenue, and AOV by Marketing Channel          |
 :-------------------------:|:-------------------------:|
-![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | ![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) 
-Quarters are conditionally formatted on the order count of each purchase platform.  | Quarters are conditionally formatted on the order count of each purchase platform. 
+![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | <img src="https://github.com/aduong58/portfolio_projects/assets/58454640/14acab13-1902-4672-9f6c-5f8ccc96d7b4" width=95% height=70%> 
+Quarters are conditionally formatted on the order count of each purchase platform.  | Marketing channels with order count, revenue, and AOV metrics.
 
 The main purchase platform for orders continues to be our desktop website accounting for 94% of orders. However, in more recent years (2021 and 2022), there has been a significant growth in orders made through the mobile app.
 
@@ -68,7 +67,7 @@ The main purchase platform for orders continues to be our desktop website accoun
 
 **Loyalty Program**
 - Seeing the growth and performance of Nexus' loyalty program within the recent years of sales, I would recommend keeping the loyalty program and taking a closer look at what has been drawing customers to the program.
-- Things I would consider are the awareness/marketing of the loyalty program, associated incentives of being a member, as well as alignment of the loyalty program with the overall business goals of Nexus.
+- Things to consider are the awareness/marketing of the loyalty program, associated incentives of being a member, as well as alignment of the loyalty program with the overall business goals of Nexus.
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
