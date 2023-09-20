@@ -18,9 +18,9 @@ The workbook containing the original dataset and created tables can be found **h
 The analysis portion of this project was done within Excel. To summarize insights and segment the data into different categories, I chose to use pivot tables alongside conditional formatting. Throughout the project, I utilized aggregation functions to clean the data and calculate new fields.
 
 **Overall Sales Trends**
-Revenue by Quarter         |  AOV and Orders           | Revenue by Month
+Revenue by Quarter         |  AOV and Order Count <br> by Quarter| Revenue by Month of Year
 :-------------------------:|:-------------------------:|:-------------------------:
-![revenue_by_quarter](https://github.com/aduong58/portfolio_projects/assets/58454640/693a2c90-afa1-4775-b318-64cc1ce0d440)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) | ![revenue_by_month](https://github.com/aduong58/portfolio_projects/assets/58454640/278058bf-026b-4519-b76d-3e10fd1c86c5)
+![revenue_by_quarter](https://github.com/aduong58/portfolio_projects/assets/58454640/c43aaf7a-79c8-45b6-b64e-3be0ddf0809d)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) | ![revenue_by_month](https://github.com/aduong58/portfolio_projects/assets/58454640/278058bf-026b-4519-b76d-3e10fd1c86c5)
 
 
 In 2019, the initial year of sales records, Nexus generated $3.26 million in sales. In the following year, the company observed a significant growth in revenue, generating $8.62 million in sales for 2020, more than doubling the revenue of the previous year's sales.
@@ -33,7 +33,7 @@ Product Orders             |  Product Revenue          |
 :-------------------------:|:-------------------------:|
 ![product_orders](https://github.com/aduong58/portfolio_projects/assets/58454640/6645e614-967a-46e3-a1b1-9d7e6aee1052)  |  ![product_sales](https://github.com/aduong58/portfolio_projects/assets/58454640/e3dc502d-2199-4355-ad5a-185759e8184b) 
 
-Looking at the order count of products sold by Nexus, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst performing product sold was the Bose Soundsport Headphones, making up just .03% of all orders made through Nexus.
+Looking at the order count of products sold by Nexus, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst performing product sold was the Bose Soundsport Headphones, making up just 0.03% of all orders made through Nexus.
 
 Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Nexus, making up 22% of orders made. It has also generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
 
