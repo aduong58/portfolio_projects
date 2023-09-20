@@ -33,7 +33,7 @@ Product Orders             |  Product Revenue          |
 :-------------------------:|:-------------------------:|
 ![product_orders](https://github.com/aduong58/portfolio_projects/assets/58454640/6645e614-967a-46e3-a1b1-9d7e6aee1052)  |  ![product_sales](https://github.com/aduong58/portfolio_projects/assets/58454640/e3dc502d-2199-4355-ad5a-185759e8184b) 
 
-Looking at the order count of products sold by Nexus, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst performing product sold was the Bose Soundsport Headphones, making up just 0.03% of all orders made through Nexus.
+Looking at the order count of products sold by Nexus, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst-performing product sold was the Bose Soundsport Headphones, making up just 0.03% of all orders made through Nexus.
 
 Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Nexus, making up 22% of orders made. It has also generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
 
@@ -41,7 +41,7 @@ Another product of interest is the 4k Gaming Monitor. It is the second most popu
 **Loyalty Program**
 Sales, AOV, and Orders by Loyalty Membership|
 :-------------------------:|
-![loyalty_program](https://github.com/aduong58/portfolio_projects/assets/58454640/73b8ea18-2cb8-490a-a426-22c37056fd07)  
+![loyalty program](https://github.com/aduong58/portfolio_projects/assets/58454640/13455652-e1a2-46f9-b16b-447697800843)
 Quarters are highlighted where sales, AOV, and order count perform better in either group (Loyalty vs. Non-Loyalty) |  
 
 In the early years of the loyalty program, the program was not performing as well as the orders made by regular customers. However, in more recent years, sales generated from members of the loyalty program have begun to outpace that of regular customers in various metrics.
@@ -52,7 +52,7 @@ In 2021 and beyond, members of the loyalty program placed 16% more orders and ge
 Orders by Purchase Platform| Revenue by Marketing Channel          |
 :-------------------------:|:-------------------------:|
 ![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | ![marketing channel](https://github.com/aduong58/portfolio_projects/assets/58454640/407d5e45-2ba6-4a14-b585-51be0e3501ef)
-Quarters are conditionally formatted on the order count of each purchase platform.  | Quarters are conditionally formatted on the revenue of each marketing channel.
+Quarterly order counts are conditionally formatted by the individual column of each purchase platform.  | Quarterly revenues are conditionally formatted by the individual column of each marketing channel.
 
 The main purchase platform for orders continues to be our desktop website accounting for 94% of orders. However, in more recent years (2021 and 2022), there has been a significant growth in orders made through the mobile app.
 
