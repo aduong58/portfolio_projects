@@ -15,16 +15,17 @@ The workbook containing the original dataset and created tables can be found **h
 
 
 # Technical Analysis
-The analysis portion of this project was done within Excel. To summarize insights and segment the data into different categories, I chose to use pivot tables alongside conditional formatting. Throughout the project I utilized aggregation functions to clean the data and calculate new fields.
+The analysis portion of this project was done within Excel. To summarize insights and segment the data into different categories, I chose to use pivot tables alongside conditional formatting. Throughout the project, I utilized aggregation functions to clean the data and calculate new fields.
 
 **Overall Sales Trends**
-Total Sales                |  AOV and Orders           | Sales by Month
+Revenue by Quarter         |  AOV and Orders           | Revenue by Month
 :-------------------------:|:-------------------------:|:-------------------------:
-![sales_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/d2b7c9b6-3f8e-4533-9e65-d8a725d675d8)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) | ![sales_by_month](https://github.com/aduong58/portfolio_projects/assets/58454640/187f8f2d-20d2-40b8-b6bf-83b28671a29d)
+![revenue_by_quarter](https://github.com/aduong58/portfolio_projects/assets/58454640/693a2c90-afa1-4775-b318-64cc1ce0d440)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) | ![revenue_by_month](https://github.com/aduong58/portfolio_projects/assets/58454640/278058bf-026b-4519-b76d-3e10fd1c86c5)
+
 
 In 2019, the initial year of sales records, Nexus generated $3.26 million in sales. In the following year, the company observed a significant growth in revenue, generating $8.62 million in sales for 2020, more than doubling the revenue of the previous year's sales.
 
-Analyzing the quarterly breakdown of revenue data reveals a peak in Q4 of 2020, where sales generated $2.5 million for just that quarter. Following this period of substantial growth, there has been a gradual decrease in revenue generated from sales. <br><br>
+Analyzing the quarterly breakdown of revenue data reveals a peak in Q2 of 2020, where sales generated $2.5 million for just that quarter. Following this period of substantial growth, there has been a gradual decrease in revenue generated from sales. <br><br>
 
 
 **Product Performance**
@@ -48,16 +49,14 @@ In the early years of the loyalty program, the program was not performing as wel
 In 2021 and beyond, members of the loyalty program placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In addition to this, in 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212. <br><br>
 
 **Purchase Platform and Marketing Channels**
-Orders by Purchase Platform|  Orders, Revenue, and AOV by Marketing Channel          |
+Orders by Purchase Platform| Revenue by Marketing Channel          |
 :-------------------------:|:-------------------------:|
-![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | ![marketing channel](https://github.com/aduong58/portfolio_projects/assets/58454640/94679acb-a2c2-4919-a22a-8c982e9a65af)
+![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | ![marketing channel](https://github.com/aduong58/portfolio_projects/assets/58454640/407d5e45-2ba6-4a14-b585-51be0e3501ef)
 Quarters are conditionally formatted on the order count of each purchase platform.  | Marketing channels with order count, revenue, and AOV metrics.
 
 The main purchase platform for orders continues to be our desktop website accounting for 94% of orders. However, in more recent years (2021 and 2022), there has been a significant growth in orders made through the mobile app.
 
-In intermediary analysis, direct marketing continues to be the best 
-![image](https://github.com/aduong58/portfolio_projects/assets/58454640/94679acb-a2c2-4919-a22a-8c982e9a65af)
-<img src="https://github.com/aduong58/portfolio_projects/assets/58454640/14acab13-1902-4672-9f6c-5f8ccc96d7b4" width=95% height=65%> 
+
 
 # Recommendations
 
