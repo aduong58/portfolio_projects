@@ -6,7 +6,7 @@ In this data analysis project, I examined key metrics within sales data to draw 
 The main metrics I focused on were sales revenue, average order value (AOV), and order counts. I worked with these metrics to analyze and break down overall sales trends, product performance, effectiveness of their loyalty program, as well as other relevant areas of the business. <br>
 
 # About the data
-The company maintains a core dataset consisting of orders, customers, products, and geographic information. 
+The company maintains a [core dataset](https://github.com/aduong58/portfolio_projects/blob/main/Nexus-Sales-Analysis/nexus_original_dataset.png) consisting of orders, customers, products, and geographic information. 
 <img src="https://github.com/aduong58/portfolio_projects/assets/58454640/423c131b-b605-4921-af29-fa584290e955" width=80% height=80%>
 
 Documentation on the cleaning and preparation of the data can be found [**here**](https://github.com/aduong58/portfolio_projects/blob/main/Nexus-Sales-Analysis/Nexus%Cleaning%Documentation.pdf)
