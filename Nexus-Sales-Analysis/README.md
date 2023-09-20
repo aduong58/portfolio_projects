@@ -50,7 +50,7 @@ In 2021 and beyond, members of the loyalty program placed 16% more orders and ge
 **Purchase Platform and Marketing Channels**
 Orders by Purchase Platform|  Orders, Revenue, and AOV by Marketing Channel          |
 :-------------------------:|:-------------------------:|
-![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | <img src="https://github.com/aduong58/portfolio_projects/assets/58454640/14acab13-1902-4672-9f6c-5f8ccc96d7b4" width=95% height=70%> 
+![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | <img src="https://github.com/aduong58/portfolio_projects/assets/58454640/14acab13-1902-4672-9f6c-5f8ccc96d7b4" width=95% height=65%> 
 Quarters are conditionally formatted on the order count of each purchase platform.  | Marketing channels with order count, revenue, and AOV metrics.
 
 The main purchase platform for orders continues to be our desktop website accounting for 94% of orders. However, in more recent years (2021 and 2022), there has been a significant growth in orders made through the mobile app.
