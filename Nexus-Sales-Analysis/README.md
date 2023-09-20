@@ -18,7 +18,7 @@ The workbook containing the original dataset and created tables can be found **h
 The analysis portion of this project was done within Excel. To summarize insights and segment the data into different categories, I chose to use pivot tables alongside conditional formatting. Throughout the project, I utilized aggregation functions to clean the data and calculate new fields.
 
 **Overall Sales Trends**
-Revenue by Quarter         |  AOV and Order Count <br> by Quarter| Revenue by Month of Year
+Revenue Growth             |  AOV and Order Count      | Revenue by Month of Year
 :-------------------------:|:-------------------------:|:-------------------------:
 ![revenue_by_quarter](https://github.com/aduong58/portfolio_projects/assets/58454640/c43aaf7a-79c8-45b6-b64e-3be0ddf0809d)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) | ![revenue_by_month](https://github.com/aduong58/portfolio_projects/assets/58454640/278058bf-026b-4519-b76d-3e10fd1c86c5)
 
@@ -52,9 +52,9 @@ In 2021 and beyond, members of the loyalty program placed 16% more orders and ge
 Orders by Purchase Platform| Revenue by Marketing Channel          |
 :-------------------------:|:-------------------------:|
 ![purchase_platform](https://github.com/aduong58/portfolio_projects/assets/58454640/612249ec-15f8-43b9-98bd-92cd930ce5f4) | ![marketing channel](https://github.com/aduong58/portfolio_projects/assets/58454640/407d5e45-2ba6-4a14-b585-51be0e3501ef)
-Quarterly order counts are conditionally formatted by the individual column of each purchase platform.  | Quarterly revenues are conditionally formatted by the individual column of each marketing channel.
+Quarterly order counts are conditionally formatted by each individual purchase platform column.  | Quarterly revenues are conditionally formatted by each individual marketing channel column
 
-The main purchase platform for orders continues to be our desktop website accounting for 94% of orders. However, in more recent years (2021 and 2022), there has been a significant growth in orders made through the mobile app.
+The main purchase platform for orders continues to be our desktop website, accounting for 94% of orders. However, in more recent years (2021 and 2022), there has been a significant growth in orders made through the mobile app.
 
 
 
