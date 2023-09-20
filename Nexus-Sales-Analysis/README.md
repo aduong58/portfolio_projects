@@ -9,7 +9,8 @@ The main metrics I focused on were sales revenue, average order value (AOV), and
 The company maintains a core dataset consisting of orders, customers, products, and geographic information. 
 <img src="https://github.com/aduong58/portfolio_projects/assets/58454640/423c131b-b605-4921-af29-fa584290e955" width=80% height=80%>
 
-Documentation on the cleaning and preparation of the data can be found [**here**](https://github.com/aduong58/portfolio_projects/blob/main/Elist-Sales-Analysis/Nexus%20Cleaning%20Documentation.pdf)
+Documentation on the cleaning and preparation of the data can be found [**here**](https://github.com/aduong58/portfolio_projects/blob/main/Nexus-Sales-Analysis/Nexus%20Cleaning%20Documentation.pdf)
+
 The workbook containing the original dataset and created tables can be found **here**
 
 
