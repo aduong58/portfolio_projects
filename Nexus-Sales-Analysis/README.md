@@ -77,8 +77,8 @@ The main purchase platform for orders continues to be our desktop website, accou
 - Consider discontinuing low-performance products like the Bose SoundSport Headphones to streamline product offerings.
 
 **Loyalty Program**
-- Seeing the growth and performance of Nexus' loyalty program within the recent years of sales, I would recommend maintaining it and taking a closer look at what has been drawing customers to the program.
-- Things to consider are loyalty program awareness, associated incentives of being a member, as well as alignment of the loyalty program with the overall business goals of Nexus.
+- Given the growth and performance of Nexus' loyalty program in recent years, I would recommend maintaining it and taking a closer look at what has been drawing customers to the program.
+- Things to consider are loyalty program awareness, associated incentives of being a member, as well as the alignment of the program with the overall business goals of Nexus.
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
