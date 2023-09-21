@@ -29,14 +29,18 @@ In 2019, the initial year of sales records, Nexus generated $3.26 million in sal
 
 Analyzing the quarterly breakdown of revenue data reveals a peak in Q2 of 2020, where sales generated $2.5 million for just that quarter. Following the period of substantial growth in 2020, there is a gradual decrease in revenue generated from sales. 
 
-This trend extends to other key metrics. Nexus received its highest number of orders in the latter half of operations, with 30.7K orders in 2021, before experiencing a steady decline in 2022. AOV follows the revenue pattern a bit more closely, reaching its highest point at $310 in Q4 2020 before gradually declining to $230 in 2022. 
+This trend extends to other key metrics. Nexus saw its peak order count at 30.7K in 2021, followed by a steady decline in 2022. Average Order Value (AOV) mirrored the revenue pattern a bit more cloesly, reaching its highest point at $310 in Q4 2020 and gradually declining to $230 in 2022.
 <br><br>
 
 Revenue and Order Count by Region|
 :-------------------------:|
-![image](https://github.com/aduong58/portfolio_projects/assets/58454640/64afc715-b6c5-4535-8c6a-4aa855fc4e08)
+![image](https://github.com/aduong58/portfolio_projects/assets/58454640/64afc715-b6c5-4535-8c6a-4aa855fc4e08)|
 
+North America leads as Nexus's primary customer market, contributing over 50% of total revenue and orders, driving $12.5 million in revenue and 48,000 orders. This is followed by the Europe, Middle East, and Africa region, contributing to just under 30% of both revenue and orders.
+
+While ranking third in terms of total revenue, the Asia-Pacific region demonstrates the highest spending per order with an AOV of $275, the only region to surpass the overall average of $259.
 <br><br>
+
 **Product Performance**
 Product Orders             |  Product Revenue          |
 :-------------------------:|:-------------------------:|
@@ -65,13 +69,13 @@ Quarterly order counts are conditionally formatted by each individual purchase p
 
 The main purchase platform for orders continues to be our desktop website, accounting for 94% of orders. However, in more recent years (2021 and 2022), there has been a significant growth in orders made through the mobile app.
 
-
+Direct marketing is shown to be the top marketing channel for Nexus, accounting for roughly 82% of total revenue. There appears to be some deviating behavior between channels. Email marketing experiences a revenue peak in 2021, slightly later than the other channels. Additionally, in 2022, there is a surge in revenue from orders where the marketing channel is not known.
 
 # Recommendations
 
 **Overall Sales**
-- In response to the recent decline in sales, I would recommend working to identify our core customer base and focusing efforts to retain that segment of customers. Looking at the loyalty program could be a good direction to start.
-
+- In response to the recent decline in sales, I would recommend working to identify our core customer base (loyalty members & top regional markets) and investing in efforts to retain that segment of customers.
+  
 **Product Performance**
 - Invest more in products that have historically generated the most revenue and orders (Apple Airpods & 4K Gaming Monitors) for Nexus.
 - Consider discontinuing low-performance products like the Bose SoundSport Headphones to streamline product offerings.
@@ -82,8 +86,9 @@ The main purchase platform for orders continues to be our desktop website, accou
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
+- Further analyze revenue data in conjunction with marketing activities data to see if there are correlations in behavior between the two.
 # Additional Notes
-- Covid technology sales could be a factor in initial sales highs -> recent years of sales tapering into true sales
-- Given more data on product costs, we would be able to add profitability to our analysis and better understand the overall performance of different products.
+- A [surge in e-commerce sales](https://www.census.gov/library/stories/2022/04/ecommerce-sales-surged-during-pandemic.html) during the COVID-19 pandemic could be a large factor in the initial spike of sales. The recent decline in sales may reflect a shift as the business aligns with its true consumer base.
+- With additional product cost data, we can enhance our analysis by assessing profitability, providing deeper insights into product line performance
 
 
