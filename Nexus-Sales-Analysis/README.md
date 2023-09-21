@@ -3,6 +3,7 @@ Founded in 2018, Nexus is an e-commerce company that sells popular electronics p
 
 In this data analysis project, I examined key metrics within sales data to draw out insights on the overall performance of Nexus and provide data-driven recommendations in the areas of sales, product, marketing, and operations.
 
+
 The main metrics I focused on were sales revenue, average order value (AOV), and order counts. I worked with these metrics to analyze and break down overall sales trends, product performance, effectiveness of their loyalty program, as well as other relevant areas of the business. <br>
 
 # About the data
@@ -18,15 +19,20 @@ The workbook containing the original dataset and created tables can be found **h
 The analysis portion of this project was done within Excel. To summarize insights and segment the data into different categories, I chose to use pivot tables alongside conditional formatting. Throughout the project, I utilized aggregation functions to clean the data and calculate new fields.
 
 **Overall Sales Trends**
-Revenue Growth             |  AOV and Order Count      | Revenue by Month of Year
-:-------------------------:|:-------------------------:|:-------------------------:
-![revenue_by_quarter](https://github.com/aduong58/portfolio_projects/assets/58454640/c43aaf7a-79c8-45b6-b64e-3be0ddf0809d)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) | ![revenue_by_month](https://github.com/aduong58/portfolio_projects/assets/58454640/278058bf-026b-4519-b76d-3e10fd1c86c5)
+Revenue Growth             |  AOV and Order Count      |
+:-------------------------:|:-------------------------:|
+![revenue_by_quarter](https://github.com/aduong58/portfolio_projects/assets/58454640/c43aaf7a-79c8-45b6-b64e-3be0ddf0809d)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) |
+Cells conditionally formatted on revenue growth rate percentage. | Cells conditionally formatted on AOV and order count columns.
 
 
 In 2019, the initial year of sales records, Nexus generated $3.26 million in sales. In the following year, the company observed a significant growth in revenue, generating $8.62 million in sales for 2020, more than doubling the revenue of the previous year's sales.
 
 Analyzing the quarterly breakdown of revenue data reveals a peak in Q2 of 2020, where sales generated $2.5 million for just that quarter. Following this period of substantial growth, there has been a gradual decrease in revenue generated from sales. <br><br>
 
+
+Revenue and Order Count by Region|
+:-------------------------:|
+![revenue by region](https://github.com/aduong58/portfolio_projects/assets/58454640/d9fb5aef-61bd-4fdb-ae7b-ac5ce7c3d5d8)
 
 **Product Performance**
 Product Orders             |  Product Revenue          |
