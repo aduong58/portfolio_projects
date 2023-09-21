@@ -21,7 +21,7 @@ The analysis portion of this project was done within Excel. To summarize insight
 **Overall Sales Trends**
 Revenue Growth             |  AOV and Order Count      |
 :-------------------------:|:-------------------------:|
-![revenue_by_quarter](https://github.com/aduong58/portfolio_projects/assets/58454640/c43aaf7a-79c8-45b6-b64e-3be0ddf0809d)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/37010556-d25e-4197-8711-2817d37b4def) |
+![revenue_by_quarter](https://github.com/aduong58/portfolio_projects/assets/58454640/c43aaf7a-79c8-45b6-b64e-3be0ddf0809d)  |  ![aov_orders_by_year](https://github.com/aduong58/portfolio_projects/assets/58454640/dbc62318-053f-4154-9dcf-3c5a6097f125) |
 Cells conditionally formatted on revenue growth rate percentage. | Cells conditionally formatted on AOV and order count columns.
 
 
@@ -29,15 +29,15 @@ In 2019, the initial year of sales records, Nexus generated $3.26 million in sal
 
 Analyzing the quarterly breakdown of revenue data reveals a peak in Q2 of 2020, where sales generated $2.5 million for just that quarter. Following this period of substantial growth, there has been a gradual decrease in revenue generated from sales. <br><br>
 
-
 Revenue and Order Count by Region|
 :-------------------------:|
-![revenue by region](https://github.com/aduong58/portfolio_projects/assets/58454640/d9fb5aef-61bd-4fdb-ae7b-ac5ce7c3d5d8)
+![image](https://github.com/aduong58/portfolio_projects/assets/58454640/64afc715-b6c5-4535-8c6a-4aa855fc4e08)
 
+<br><br>
 **Product Performance**
 Product Orders             |  Product Revenue          |
 :-------------------------:|:-------------------------:|
-![product_orders](https://github.com/aduong58/portfolio_projects/assets/58454640/6645e614-967a-46e3-a1b1-9d7e6aee1052)  |  ![product_sales](https://github.com/aduong58/portfolio_projects/assets/58454640/e3dc502d-2199-4355-ad5a-185759e8184b) 
+![product_orders](https://github.com/aduong58/portfolio_projects/assets/58454640/8feebc5d-0f74-4fa1-b7c6-b1c1a0c4ceb0)  |  ![product_sales](https://github.com/aduong58/portfolio_projects/assets/58454640/e3dc502d-2199-4355-ad5a-185759e8184b) 
 
 Looking at the order count of products sold by Nexus, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst-performing product sold was the Bose Soundsport Headphones, making up just 0.03% of all orders made through Nexus.
 
@@ -47,7 +47,7 @@ Another product of interest is the 4k Gaming Monitor. It is the second most popu
 **Loyalty Program**
 Sales, AOV, and Orders by Loyalty Membership|
 :-------------------------:|
-![loyalty program](https://github.com/aduong58/portfolio_projects/assets/58454640/13455652-e1a2-46f9-b16b-447697800843)
+![loyalty program](https://github.com/aduong58/portfolio_projects/assets/58454640/5a3094df-cda4-4638-8c8b-dd23a3813075)
 Quarters are highlighted where sales, AOV, and order count perform better in either group (Loyalty vs. Non-Loyalty) |  
 
 In the early years of the loyalty program, the program was not performing as well as the orders made by regular customers. However, in more recent years, sales generated from members of the loyalty program have begun to outpace that of regular customers in various metrics.
