@@ -25,9 +25,12 @@ Revenue Growth             |  AOV and Order Count      |
 Cells conditionally formatted on revenue growth rate percentage. | Cells conditionally formatted on AOV and order count columns.
 
 
-In 2019, the initial year of sales records, Nexus generated $3.26 million in sales. In the following year, the company observed a significant growth in revenue, generating $8.62 million in sales for 2020, more than doubling the revenue of the previous year's sales.
+In 2019, the initial year of sales records, Nexus generated $3.26 million in sales. In the following year, the company observed significant growth, generating $8.62 million in sales for 2020, more than doubling the revenue of the previous year's sales.
 
-Analyzing the quarterly breakdown of revenue data reveals a peak in Q2 of 2020, where sales generated $2.5 million for just that quarter. Following this period of substantial growth, there has been a gradual decrease in revenue generated from sales. <br><br>
+Analyzing the quarterly breakdown of revenue data reveals a peak in Q2 of 2020, where sales generated $2.5 million for just that quarter. Following the period of substantial growth in 2020, there is a gradual decrease in revenue generated from sales. 
+
+This trend extends to other key metrics. AOV reached its highest point at $310 in Q4 2020 before gradually declining to $230 in 2022. Nexus received its highest number of orders in the latter half of operations, with 30.7K orders in 2021, before experiencing a steady decline in 2022.
+<br><br>
 
 Revenue and Order Count by Region|
 :-------------------------:|
@@ -41,7 +44,7 @@ Product Orders             |  Product Revenue          |
 
 Looking at the order count of products sold by Nexus, the top performing product is Apple Airpods Headphones, making up nearly 45% of all orders made. On the other hand, the worst-performing product sold was the Bose Soundsport Headphones, making up just 0.03% of all orders made through Nexus.
 
-Another product of interest is the 4k Gaming Monitor. It is the second most popular product sold by Nexus, making up 22% of orders made. It has also generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
+The second most popular product sold by Nexus is the 4K Gaming Monitor, making up 22% of orders made. It has also generated the most revenue of all products at $8.4M, making up 35% of the total revenue generated from sales. <br><br>
 
 
 **Loyalty Program**
@@ -50,9 +53,9 @@ Sales, AOV, and Orders by Loyalty Membership|
 ![loyalty program](https://github.com/aduong58/portfolio_projects/assets/58454640/5a3094df-cda4-4638-8c8b-dd23a3813075)
 Quarters are highlighted where sales, AOV, and order count perform better in either group (Loyalty vs. Non-Loyalty) |  
 
-In the early years of the loyalty program, the program was not performing as well as the orders made by regular customers. However, in more recent years, sales generated from members of the loyalty program have begun to outpace that of regular customers in various metrics.
+In the early years of the loyalty program, the program was not performing as well as the orders made by regular customers. However, in more recent years, sales generated from members of the loyalty program have outpaced that of regular customers in various metrics.
 
-In 2021 and beyond, members of the loyalty program placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In addition to this, in 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212. <br><br>
+In 2021 and beyond, members of the loyalty program placed 16% more orders and generated over $1M more in revenue than non-loyalty customers. In 2022, loyalty members spent more money per order with an AOV of $246 compared to the AOV of regular customers at $212. <br><br>
 
 **Purchase Platform and Marketing Channels**
 Orders by Purchase Platform| Revenue by Marketing Channel          |
@@ -70,12 +73,12 @@ The main purchase platform for orders continues to be our desktop website, accou
 - In response to the recent decline in sales, I would recommend working to identify our core customer base and focusing efforts to retain that segment of customers. Looking at the loyalty program could be a good direction to start.
 
 **Product Performance**
-- I would recommend investing more in products that have historically generated the most revenue and orders (Apple Airpods & 4K Gaming Monitors) for Nexus.
-- I also would consider discontinuing low performance products like the Bose SoundSport Headphones to streamline product offerings.
+- Invest more in products that have historically generated the most revenue and orders (Apple Airpods & 4K Gaming Monitors) for Nexus.
+- Consider discontinuing low-performance products like the Bose SoundSport Headphones to streamline product offerings.
 
 **Loyalty Program**
-- Seeing the growth and performance of Nexus' loyalty program within the recent years of sales, I would recommend keeping the loyalty program and taking a closer look at what has been drawing customers to the program.
-- Things to consider are the awareness/marketing of the loyalty program, associated incentives of being a member, as well as alignment of the loyalty program with the overall business goals of Nexus.
+- Seeing the growth and performance of Nexus' loyalty program within the recent years of sales, I would recommend maintaining it and taking a closer look at what has been drawing customers to the program.
+- Things to consider are loyalty program awareness, associated incentives of being a member, as well as alignment of the loyalty program with the overall business goals of Nexus.
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
