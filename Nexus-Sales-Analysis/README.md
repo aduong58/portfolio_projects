@@ -29,7 +29,7 @@ In 2019, the initial year of sales records, Nexus generated $3.26 million in sal
 
 Analyzing the quarterly breakdown of revenue data reveals a peak in Q2 of 2020, where sales generated $2.5 million for just that quarter. Following the period of substantial growth in 2020, there is a gradual decrease in revenue generated from sales. 
 
-This trend extends to other key metrics. AOV reached its highest point at $310 in Q4 2020 before gradually declining to $230 in 2022. Nexus received its highest number of orders in the latter half of operations, with 30.7K orders in 2021, before experiencing a steady decline in 2022.
+This trend extends to other key metrics. Nexus received its highest number of orders in the latter half of operations, with 30.7K orders in 2021, before experiencing a steady decline in 2022. AOV follows the revenue pattern a bit more closely, reaching its highest point at $310 in Q4 2020 before gradually declining to $230 in 2022. 
 <br><br>
 
 Revenue and Order Count by Region|
