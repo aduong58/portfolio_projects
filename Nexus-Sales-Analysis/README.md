@@ -77,6 +77,8 @@ Direct marketing is shown to be the top marketing channel for Nexus, accounting 
   
 **Product Performance**
 - Invest more in products that have historically generated the most revenue and orders (Apple Airpods & 4K Gaming Monitors) for Nexus.
+  - Increase marketing efforts to capitalize on the existing demand for the products and further expand market reach.
+  - Implement product bundling strategies to increase AOV and cross-promote high-performing products with others.
 - Consider discontinuing low-performance products like the Bose SoundSport Headphones to streamline product offerings.
 
 **Loyalty Program**
@@ -85,7 +87,9 @@ Direct marketing is shown to be the top marketing channel for Nexus, accounting 
 
 **Purchase Platform and Marketing Channels**
 - In more recent years the mobile site has been growing as a purchase platform, I would recommend reviewing the mobile site operations to maintain and possibly expand ease of usability.
-- Further analyze revenue data in conjunction with marketing activities data to see if there are correlations in behavior between the two.
+- Seek further data on marketing activities/events and analyze in conjunction with existing revenue data.
+  - Conduct detailed assessment of top marketing channels, delving into customer engagement and audience reach.
+  - Investigate campaign timing for potential links between marketing activities and revenue fluctuations.
 # Additional Notes
 - A [surge in e-commerce sales](https://www.census.gov/library/stories/2022/04/ecommerce-sales-surged-during-pandemic.html) during the COVID-19 pandemic could be a large factor in the initial spike of sales. The recent decline in sales may reflect a shift as the business aligns with its true consumer base.
 - With additional product cost data, we can enhance our analysis by assessing profitability, providing deeper insights into product line performance
