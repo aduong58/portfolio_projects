@@ -9,6 +9,8 @@ The main metrics I focused on were sales revenue, average order value (AOV), and
 The company maintains a [core dataset](https://github.com/aduong58/portfolio_projects/blob/main/Nexus-Sales-Analysis/nexus_dataset.png) consisting of orders, customers, products, and geographic information. 
 <img src="https://github.com/aduong58/portfolio_projects/assets/58454640/423c131b-b605-4921-af29-fa584290e955" width=80% height=80%>
 
+The original dataset presented various data quality issues including duplicate order IDs, inconsistent date formats, missing values, and other anomalies. Resolving these discrepancies through data cleaning was an essential step in preparing the dataset for analysis.
+
 Documentation on the cleaning and preparation of the data can be found [**here**](https://github.com/aduong58/portfolio_projects/blob/main/Nexus-Sales-Analysis/nexus_cleaning_doc.pdf).
 
 The workbook containing the original dataset and created tables can be found [**here**](https://github.com/aduong58/portfolio_projects/blob/main/Nexus-Sales-Analysis/nexus_workbook.xlsx).
