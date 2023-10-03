@@ -5,7 +5,7 @@ This is a complementary portion to the [Nexus Sales Analysis](https://github.com
 2. Tableau dashboard created towards the end of the project for more visual analysis of the data.
 
 
-Ad-hoc questions
+## Ad-hoc Analysis using SQL
 <details>
 <summary>What are the monthly and quarterly sales trends for Macbooks sold in North America across all years </summary> <br>
   Insert notes for this questions here.
