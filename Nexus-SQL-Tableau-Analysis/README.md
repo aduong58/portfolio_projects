@@ -5,7 +5,8 @@ This is a complementary portion to the [Nexus Sales Analysis](https://github.com
 2. Tableau dashboard created towards the END of the project for more visual analysis of the data.
 
 
-## Ad-hoc Analysis using SQL
+# Ad-hoc Analysis using SQL
+### Product Sales and Refunds
 <details>
 <summary>What are the monthly AND quarterly sales trends for Macbooks sold in North America across all years </summary> <br>
   Insert notes for this questions here.
@@ -88,26 +89,7 @@ This is a complementary portion to the [Nexus Sales Analysis](https://github.com
   ````
 </details>
 
-<details>
-<summary>What’s the average order value across different account creation methods in the first two months of 2022? Which method had the most new customers in this time?</summary> <br>
-  Insert notes for this questions here.
-  
-  ````sql
-  SELECT 
-    CASE WHEN customers.account_creation_method is null then "unknown"
-      ELSE customers.account_creation_method
-      END AS account_creation_method_clean,
-    ROUND(AVG(orders.usd_price), 2) AS aov,
-    COUNT(*) AS new_customer_count
-  FROM elist.orders
-  LEFT JOIN elist.customers
-   ON orders.customer_id = customers.id
-  WHERE customers.created_on between '2022-01-01' AND '2022-02-28'
-  GROUP BY account_creation_method_clean
-  ORDER BY aov DESC
-  ````
-</details>
-
+### Customer Behavior and Marketing
 <details>
 <summary>What’s the average time between customer registration AND placing an order?</summary> <br>
   Insert notes for this questions here.
@@ -182,6 +164,27 @@ ORDER BY region, total_sales DESC, marketing_channel
   ````
 </details>
 
+<details>
+<summary>What’s the average order value across different account creation methods in the first two months of 2022? Which method had the most new customers in this time?</summary> <br>
+  Insert notes for this questions here.
+  
+  ````sql
+  SELECT 
+    CASE WHEN customers.account_creation_method is null then "unknown"
+      ELSE customers.account_creation_method
+      END AS account_creation_method_clean,
+    ROUND(AVG(orders.usd_price), 2) AS aov,
+    COUNT(*) AS new_customer_count
+  FROM elist.orders
+  LEFT JOIN elist.customers
+   ON orders.customer_id = customers.id
+  WHERE customers.created_on between '2022-01-01' AND '2022-02-28'
+  GROUP BY account_creation_method_clean
+  ORDER BY aov DESC
+  ````
+</details>
+
+### Overall Refunds
 <details>
 <summary>For each brand, which month in 2020 had the highest number of refunds, AND how many refunds did that month have?</summary> <br>
   Insert notes for this questions here.
