@@ -1,37 +1,37 @@
-Hello! Currently a work in progress, transferring information over from BigQuery and Tableau Desktop.
+Hello! Currently a work in progress, transferring information OVER FROM BigQuery AND Tableau Desktop.
 
 This is a complementary portion to the [Nexus Sales Analysis](https://github.com/aduong58/portfolio_projects/tree/main/Nexus-Sales-Analysis) project. This subsegment of the main project will contain:
-1. SQL queries that were used for ad-hoc analysis before and during the Excel analysis.
-2. Tableau dashboard created towards the end of the project for more visual analysis of the data.
+1. SQL queries that were used for ad-hoc analysis before AND during the Excel analysis.
+2. Tableau dashboard created towards the END of the project for more visual analysis of the data.
 
 
 ## Ad-hoc Analysis using SQL
 <details>
-<summary>What are the monthly and quarterly sales trends for Macbooks sold in North America across all years </summary> <br>
+<summary>What are the monthly AND quarterly sales trends for Macbooks sold in North America across all years </summary> <br>
   Insert notes for this questions here.
   
   ````sql
-with quarterly_data as (
-  SELECT date_trunc(orders.purchase_ts, quarter) as purchase_quarter,
-    geo_lookup.region,
-    round(sum(orders.usd_price)) as quarterly_sales,
-    count(orders.usd_price) as order_count,
-    round(avg(orders.usd_price)) as aov
-  from elist.orders
-  inner join elist.customers
-    on customers.id = orders.customer_id
-  left join elist.geo_lookup
-    on customers.country_code = geo_lookup.country
-  where lower(orders.product_name) like "%macbook%"
-    and lower(geo_lookup.region) like "%na%"
-  group by purchase_quarter, geo_lookup.region
-  order by purchase_quarter desc
-)
-
-SELECT round(avg(quarterly_sales)) as average_quarterly_sales,
-  avg(order_count) as avg_order_count,
-  avg(aov) as avg_aov
-from quarterly_data
+  WITH quarterly_data AS (
+    SELECT date_trunc(orders.purchase_ts, quarter) AS purchase_quarter,
+      geo_lookup.region,
+      ROUND(SUM(orders.usd_price)) AS quarterly_sales,
+      COUNT(orders.usd_price) AS order_count,
+      ROUND(AVG(orders.usd_price)) AS aov
+    FROM elist.orders
+    INNER JOIN elist.customers
+     ON customers.id = orders.customer_id
+    LEFT JOIN elist.geo_lookup
+     ON customers.country_code = geo_lookup.country
+    WHERE LOWER(orders.product_name) LIKE "%macbook%"
+      AND LOWER(geo_lookup.region) LIKE "%na%"
+    GROUP BY purchase_quarter, geo_lookup.region
+    ORDER BY purchase_quarter DESC
+  )
+  
+  SELECT ROUND(AVG(quarterly_sales)) AS average_quarterly_sales,
+    AVG(order_count) AS avg_order_count,
+    AVG(aov) AS avg_aov
+  FROM quarterly_data
   ```` 
 </details>
 
@@ -40,31 +40,31 @@ from quarterly_data
   Insert notes for this questions here.
   
   ````sql
-  with refund_rates_2020 as (
-  select date_trunc(orders.purchase_ts, month) as sales_month, 
-    round(count(order_status.refund_ts) / count(*), 4) as refund_rate
-  from elist.orders
-  left join elist.order_status
-    on orders.id = order_status.id
-  where extract(year from orders.purchase_ts) = 2020
-  group by sales_month
-  order by sales_month
-),
-
-apple_refunds_2021 as (
-  select date_trunc(orders.purchase_ts, month) as sales_month,
-    count(order_status.refund_ts) as refunds_count
-  from elist.orders
-  left join elist.order_status
-    on orders.id = order_status.id
-  where extract(YEAR from orders.purchase_ts) = 2021
-    and (lower(orders.product_name) like "%apple%" 
-    or lower(orders.product_name) like "%macbook%")
-  group by sales_month
-  order by sales_month
-)
-
-select * from apple_refunds_2021
+  WITH refund_rates_2020 AS (
+    SELECT date_trunc(orders.purchase_ts, month) AS sales_month, 
+      ROUND(COUNT(order_status.refund_ts) / COUNT(*), 4) AS refund_rate
+    FROM elist.orders
+    LEFT JOIN elist.order_status
+     ON orders.id = order_status.id
+    WHERE extract(year FROM orders.purchase_ts) = 2020
+    GROUP BY sales_month
+    ORDER BY sales_month
+  ),
+  
+  apple_refunds_2021 AS (
+    SELECT date_trunc(orders.purchase_ts, month) AS sales_month,
+      COUNT(order_status.refund_ts) AS refunds_count
+    FROM elist.orders
+    LEFT JOIN elist.order_status
+     ON orders.id = order_status.id
+    WHERE extract(YEAR FROM orders.purchase_ts) = 2021
+      AND (LOWER(orders.product_name) LIKE "%apple%" 
+      OR LOWER(orders.product_name) LIKE "%macbook%")
+    GROUP BY sales_month
+    ORDER BY sales_month
+  )
+  
+  SELECT * FROM apple_refunds_2021
   ````
 </details>
 
@@ -73,18 +73,18 @@ select * from apple_refunds_2021
   Insert notes for this questions here.
   
   ````sql
-  select 
-    CASE WHEN orders.product_name like "%\"\"%" THEN "27in 4K gaming monitor"
+  SELECT 
+    CASE WHEN orders.product_name LIKE "%\"\"%" THEN "27in 4K gaming monitor"
       ELSE orders.product_name
       END AS product_name_clean,
-    count(order_status.refund_ts) as refund_count,
-    round(count(order_status.refund_ts) / count(*), 4) as refund_rate
-  from elist.orders
-  left join elist.order_status
-    on orders.id = order_status.id
-  group by product_name_clean
-  order by refund_rate desc
-  -- order by refund_count desc
+    COUNT(order_status.refund_ts) AS refund_count,
+    ROUND(COUNT(order_status.refund_ts) / COUNT(*), 4) AS refund_rate
+  FROM elist.orders
+  LEFT JOIN elist.order_status
+   ON orders.id = order_status.id
+  GROUP BY product_name_clean
+  ORDER BY refund_rate DESC
+  -- ORDER BY refund_count DESC
   ````
 </details>
 
@@ -93,43 +93,39 @@ select * from apple_refunds_2021
   Insert notes for this questions here.
   
   ````sql
-  with creation_method_count as (
-  select 
-    case when customers.account_creation_method is null then "unknown"
-      else customers.account_creation_method
-      end as account_creation_method_clean,
-    round(avg(orders.usd_price), 2) as aov,
-    count(*) as new_customer_count
-  from elist.orders
-  left join elist.customers
-    on orders.customer_id = customers.id
-  where customers.created_on between '2022-01-01' and '2022-02-28'
-  group by account_creation_method_clean
-  order by aov desc
-)
-
-select * from creation_method_count
+  SELECT 
+    CASE WHEN customers.account_creation_method is null then "unknown"
+      ELSE customers.account_creation_method
+      END AS account_creation_method_clean,
+    ROUND(AVG(orders.usd_price), 2) AS aov,
+    COUNT(*) AS new_customer_count
+  FROM elist.orders
+  LEFT JOIN elist.customers
+   ON orders.customer_id = customers.id
+  WHERE customers.created_on between '2022-01-01' AND '2022-02-28'
+  GROUP BY account_creation_method_clean
+  ORDER BY aov DESC
   ````
 </details>
 
 <details>
-<summary>What’s the average time between customer registration and placing an order?</summary> <br>
+<summary>What’s the average time between customer registration AND placing an order?</summary> <br>
   Insert notes for this questions here.
   
   ````sql
-  with customer_first_purchase as (
-  select customers.id,
-    min(customers.created_on) as creation_date,
-    min(orders.purchase_ts) as first_purchase_date,
-    date_diff(min(orders.purchase_ts), min(customers.created_on), day) as days_to_first_purchase
-  from elist.customers
-  left join elist.orders
-    on customers.id = orders.customer_id
-  group by customers.id
+  WITH customer_first_purchase AS (
+    SELECT customers.id,
+      MIN(customers.created_on) AS creation_date,
+      MIN(orders.purchase_ts) AS first_purchase_date,
+      DATE_DIFF(MIN(orders.purchase_ts), MIN(customers.created_on), day) AS days_to_first_purchase
+    FROM elist.customers
+    LEFT JOIN elist.orders
+     ON customers.id = orders.customer_id
+    GROUP BY customers.id
 )
 
-select round(avg(days_to_first_purchase), 2) as avg_days_to_first_purchase
-from customer_first_purchase
+  SELECT ROUND(AVG(days_to_first_purchase), 2) AS avg_days_to_first_purchase
+  FROM customer_first_purchase
   ````
 </details>
 
@@ -138,92 +134,93 @@ from customer_first_purchase
   Insert notes for this questions here.
   
   ````sql
-  with marketing_channels_by_region as (
-    select 
+  WITH marketing_channels_by_region AS (
+    SELECT 
       geo_lookup.region,
       customers.marketing_channel,
-      round(sum(orders.usd_price)) as total_sales,
-      count(orders.usd_price) as order_count,
-      round(avg(orders.usd_price), 2) as aov
-    from elist.customers
-    left join elist.orders
-      on customers.id = orders.customer_id
-    left join elist.geo_lookup
-      on customers.country_code = geo_lookup.country
-    group by customers.marketing_channel, geo_lookup.region
+      ROUND(SUM(orders.usd_price)) AS total_sales,
+      COUNT(orders.usd_price) AS order_count,
+      ROUND(AVG(orders.usd_price), 2) AS aov
+    FROM elist.customers
+    LEFT JOIN elist.orders
+     ON customers.id = orders.customer_id
+    LEFT JOIN elist.geo_lookup
+     ON customers.country_code = geo_lookup.country
+    GROUP BY customers.marketing_channel, geo_lookup.region
 )
 
-select *
-from marketing_channels_by_region
-order by region, total_sales desc, marketing_channel
+SELECT *
+FROM marketing_channels_by_region
+ORDER BY region, total_sales DESC, marketing_channel
   ````
 </details>
 
 <details>
-<summary>For customers who purchased more than 4 orders across all years, what was the order ID, product, and purchase date of their most recent order?</summary> <br>
+<summary>For customers who purchased more than 4 orders across all years, what was the order ID, product, AND purchase date of their most recent order?</summary> <br>
   Insert notes for this questions here.
   
   ````sql
   -- Breakdown by customers who made more than 4 orders across all years
-  with repeat_customers as (
-    select customer_id
-    from elist.orders
-    group by orders.customer_id
-    having count(orders.id) > 4
+  WITH repeat_customers AS (
+    SELECT customer_id
+    FROM elist.orders
+    GROUP BY orders.customer_id
+    having COUNT(orders.id) > 4
   )
   
   -- The window function adds a column that ranks the recency of each order using purchase_ts
   -- this is partitioned by the customer_id, there are separate rankings for the rows of each customer_id
-  select orders.customer_id,
-    orders.id as order_id,
+  SELECT orders.customer_id,
+    orders.id AS order_id,
     orders.product_name,
     orders.purchase_ts,
-    row_number() over (partition by orders.customer_id order by orders.purchase_ts desc) as order_ranking
-  from elist.orders
-  right join repeat_customers
-     on orders.customer_id = repeat_customers.customer_id
-  qualify row_number() over (partition by orders.customer_id order by orders.purchase_ts desc) = 1
+    ROW_NUMBER() OVER (PARTITION BY orders.customer_id ORDER BY orders.purchase_ts DESC) AS order_ranking
+  FROM elist.orders
+  RIGHT JOIN repeat_customers
+    ON orders.customer_id = repeat_customers.customer_id
+  QUALIFY ROW_NUMBER() OVER (PARTITION BY orders.customer_id ORDER BY orders.purchase_ts DESC) = 1
   ````
 </details>
 
 <details>
-<summary>For each brand, which month in 2020 had the highest number of refunds, and how many refunds did that month have?</summary> <br>
+<summary>For each brand, which month in 2020 had the highest number of refunds, AND how many refunds did that month have?</summary> <br>
   Insert notes for this questions here.
   
   ````sql
   -- Lookup table for associated brands of products
-  with brands as (
-    select distinct product_name,
-      case when lower(product_name) like '%apple%' or lower(product_name) like '%macbook%' then 'Apple'
-  	    when lower(product_name) like '%thinkpad%' then 'Lenovo'
-  	    when lower(product_name) like '%samsung%' then 'Samsung'
-  	    when lower(product_name) like '%bose%' then 'Bose'
-  	    else 'Unknown'
-  	  end as brand_name,
-    from elist.orders
+  WITH brands AS (
+    SELECT distinct product_name,
+      CASE
+        WHEN LOWER(product_name) LIKE '%apple%' OR LOWER(product_name) LIKE '%macbook%' then 'Apple'
+        WHEN LOWER(product_name) LIKE '%thinkpad%' then 'Lenovo'
+        WHEN LOWER(product_name) LIKE '%samsung%' then 'Samsung'
+        WHEN LOWER(product_name) LIKE '%bose%' then 'Bose'
+        ELSE 'Unknown'
+      END AS brand_name
+    FROM elist.orders
   ),
   
   -- Calculating the refund count of each brand for each month of 2020
-  monthly_refunds as ( 
-    select date_trunc(orders.purchase_ts, month) as sales_month,
+  monthly_refunds AS ( 
+    SELECT date_trunc(orders.purchase_ts, month) AS sales_month,
       brands.brand_name,
-      count(order_status.refund_ts) as refund_count,
-    from elist.orders
-    left join elist.order_status
-      on orders.id = order_status.id
-    left join brands
-      on orders.product_name = brands.product_name
-    where orders.purchase_ts between '2020-01-01' and '2020-12-31'
-    group by date_trunc(orders.purchase_ts, month), brands.brand_name
+      COUNT(order_status.refund_ts) AS refund_count
+    FROM elist.orders
+    LEFT JOIN elist.order_status
+     ON orders.id = order_status.id
+    LEFT JOIN brands
+     ON orders.product_name = brands.product_name
+    WHERE orders.purchase_ts between '2020-01-01' AND '2020-12-31'
+    GROUP BY date_trunc(orders.purchase_ts, month), brands.brand_name
   )
   
-  -- For each brand, select the month with the highest refund count
-  select sales_month,
+  -- For each brand, SELECT the month WITH the highest refund count
+  SELECT sales_month,
     brand_name,
     refund_count,
-    row_number() over (partition by brand_name order by refund_count desc) as ranking
-  from monthly_refunds
-  qualify row_number() over (partition by brand_name order by refund_count desc) = 1 
+    ROW_NUMBER() OVER (PARTITION BY brand_name ORDER BY refund_count DESC) AS ranking
+  FROM monthly_refunds
+  QUALIFY ROW_NUMBER() OVER (PARTITION BY brand_name ORDER BY refund_count DESC) = 1 
   ````
 </details>
 
