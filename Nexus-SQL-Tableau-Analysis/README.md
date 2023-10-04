@@ -40,7 +40,31 @@ from quarterly_data
   Insert notes for this questions here.
   
   ````sql
-  Insert SQL query here 
+  with refund_rates_2020 as (
+  select date_trunc(orders.purchase_ts, month) as sales_month, 
+    round(count(order_status.refund_ts) / count(*), 4) as refund_rate
+  from elist.orders
+  left join elist.order_status
+    on orders.id = order_status.id
+  where extract(year from orders.purchase_ts) = 2020
+  group by sales_month
+  order by sales_month
+),
+
+apple_refunds_2021 as (
+  select date_trunc(orders.purchase_ts, month) as sales_month,
+    count(order_status.refund_ts) as refunds_count
+  from elist.orders
+  left join elist.order_status
+    on orders.id = order_status.id
+  where extract(YEAR from orders.purchase_ts) = 2021
+    and (lower(orders.product_name) like "%apple%" 
+    or lower(orders.product_name) like "%macbook%")
+  group by sales_month
+  order by sales_month
+)
+
+select * from apple_refunds_2021
   ````
 </details>
 
@@ -49,7 +73,18 @@ from quarterly_data
   Insert notes for this questions here.
   
   ````sql
-  Insert SQL query here 
+  select 
+    CASE WHEN orders.product_name like "%\"\"%" THEN "27in 4K gaming monitor"
+      ELSE orders.product_name
+      END AS product_name_clean,
+    count(order_status.refund_ts) as refund_count,
+    round(count(order_status.refund_ts) / count(*), 4) as refund_rate
+  from elist.orders
+  left join elist.order_status
+    on orders.id = order_status.id
+  group by product_name_clean
+  order by refund_rate desc
+  -- order by refund_count desc
   ````
 </details>
 
@@ -58,7 +93,22 @@ from quarterly_data
   Insert notes for this questions here.
   
   ````sql
-  Insert SQL query here 
+  with creation_method_count as (
+  select 
+    case when customers.account_creation_method is null then "unknown"
+      else customers.account_creation_method
+      end as account_creation_method_clean,
+    round(avg(orders.usd_price), 2) as aov,
+    count(*) as new_customer_count
+  from elist.orders
+  left join elist.customers
+    on orders.customer_id = customers.id
+  where customers.created_on between '2022-01-01' and '2022-02-28'
+  group by account_creation_method_clean
+  order by aov desc
+)
+
+select * from creation_method_count
   ````
 </details>
 
@@ -67,7 +117,19 @@ from quarterly_data
   Insert notes for this questions here.
   
   ````sql
-  Insert SQL query here 
+  with customer_first_purchase as (
+  select customers.id,
+    min(customers.created_on) as creation_date,
+    min(orders.purchase_ts) as first_purchase_date,
+    date_diff(min(orders.purchase_ts), min(customers.created_on), day) as days_to_first_purchase
+  from elist.customers
+  left join elist.orders
+    on customers.id = orders.customer_id
+  group by customers.id
+)
+
+select round(avg(days_to_first_purchase), 2) as avg_days_to_first_purchase
+from customer_first_purchase
   ````
 </details>
 
@@ -76,7 +138,24 @@ from quarterly_data
   Insert notes for this questions here.
   
   ````sql
-  Insert SQL query here 
+  with marketing_channels_by_region as (
+    select 
+      geo_lookup.region,
+      customers.marketing_channel,
+      round(sum(orders.usd_price)) as total_sales,
+      count(orders.usd_price) as order_count,
+      round(avg(orders.usd_price), 2) as aov
+    from elist.customers
+    left join elist.orders
+      on customers.id = orders.customer_id
+    left join elist.geo_lookup
+      on customers.country_code = geo_lookup.country
+    group by customers.marketing_channel, geo_lookup.region
+)
+
+select *
+from marketing_channels_by_region
+order by region, total_sales desc, marketing_channel
   ````
 </details>
 
@@ -85,15 +164,66 @@ from quarterly_data
   Insert notes for this questions here.
   
   ````sql
-  Insert SQL query here 
+  -- Breakdown by customers who made more than 4 orders across all years
+  with repeat_customers as (
+    select customer_id
+    from elist.orders
+    group by orders.customer_id
+    having count(orders.id) > 4
+  )
+  
+  -- The window function adds a column that ranks the recency of each order using purchase_ts
+  -- this is partitioned by the customer_id, there are separate rankings for the rows of each customer_id
+  select orders.customer_id,
+    orders.id as order_id,
+    orders.product_name,
+    orders.purchase_ts,
+    row_number() over (partition by orders.customer_id order by orders.purchase_ts desc) as order_ranking
+  from elist.orders
+  right join repeat_customers
+     on orders.customer_id = repeat_customers.customer_id
+  qualify row_number() over (partition by orders.customer_id order by orders.purchase_ts desc) = 1
   ````
 </details>
 
 <details>
 <summary>For each brand, which month in 2020 had the highest number of refunds, and how many refunds did that month have?</summary> <br>
   Insert notes for this questions here.
+  
   ````sql
-  Insert SQL query here 
+  -- Lookup table for associated brands of products
+  with brands as (
+    select distinct product_name,
+      case when lower(product_name) like '%apple%' or lower(product_name) like '%macbook%' then 'Apple'
+  	    when lower(product_name) like '%thinkpad%' then 'Lenovo'
+  	    when lower(product_name) like '%samsung%' then 'Samsung'
+  	    when lower(product_name) like '%bose%' then 'Bose'
+  	    else 'Unknown'
+  	  end as brand_name,
+    from elist.orders
+  ),
+  
+  -- Calculating the refund count of each brand for each month of 2020
+  monthly_refunds as ( 
+    select date_trunc(orders.purchase_ts, month) as sales_month,
+      brands.brand_name,
+      count(order_status.refund_ts) as refund_count,
+    from elist.orders
+    left join elist.order_status
+      on orders.id = order_status.id
+    left join brands
+      on orders.product_name = brands.product_name
+    where orders.purchase_ts between '2020-01-01' and '2020-12-31'
+    group by date_trunc(orders.purchase_ts, month), brands.brand_name
+  )
+  
+  -- For each brand, select the month with the highest refund count
+  select sales_month,
+    brand_name,
+    refund_count,
+    row_number() over (partition by brand_name order by refund_count desc) as ranking
+  from monthly_refunds
+  qualify row_number() over (partition by brand_name order by refund_count desc) = 1 
   ````
 </details>
 
