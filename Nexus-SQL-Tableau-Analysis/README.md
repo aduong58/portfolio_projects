@@ -9,7 +9,7 @@ This is a complementary portion to the [Nexus Sales Analysis](https://github.com
 ### Product Sales and Refunds
 <details>
 <summary>What are the monthly AND quarterly sales trends for Macbooks sold in North America across all years </summary> <br>
-  Insert notes for this questions here.
+  
   
   ````sql
   WITH quarterly_data AS (
@@ -38,7 +38,7 @@ This is a complementary portion to the [Nexus Sales Analysis](https://github.com
 
 <details>
 <summary>What was the monthly refund rate for purchases made in 2020? How many refunds did we have each month in 2021 for Apple products?</summary> <br>
-  Insert notes for this questions here.
+  
   
   ````sql
   WITH refund_rates_2020 AS (
@@ -71,7 +71,7 @@ This is a complementary portion to the [Nexus Sales Analysis](https://github.com
 
 <details>
 <summary>Are there certain products that are getting refunded more frequently than others? What are the top 3 most frequently refunded products across all years? What are the top 3 products that have the highest count of refunds?</summary> <br>
-  Insert notes for this questions here.
+  
   
   ````sql
   SELECT 
@@ -92,7 +92,7 @@ This is a complementary portion to the [Nexus Sales Analysis](https://github.com
 ### Customer Behavior and Marketing
 <details>
 <summary>What’s the average time between customer registration AND placing an order?</summary> <br>
-  Insert notes for this questions here.
+  
   
   ````sql
   WITH customer_first_purchase AS (
@@ -113,7 +113,7 @@ This is a complementary portion to the [Nexus Sales Analysis](https://github.com
 
 <details>
 <summary>Which marketing channels perform the best in each region? Does the top channel differ across regions?</summary> <br>
-  Insert notes for this questions here.
+  
   
   ````sql
   WITH marketing_channels_by_region AS (
@@ -139,7 +139,7 @@ ORDER BY region, total_sales DESC, marketing_channel
 
 <details>
 <summary>For customers who purchased more than 4 orders across all years, what was the order ID, product, AND purchase date of their most recent order?</summary> <br>
-  Insert notes for this questions here.
+  
   
   ````sql
   -- Breakdown by customers who made more than 4 orders across all years
@@ -166,7 +166,7 @@ ORDER BY region, total_sales DESC, marketing_channel
 
 <details>
 <summary>What’s the average order value across different account creation methods in the first two months of 2022? Which method had the most new customers in this time?</summary> <br>
-  Insert notes for this questions here.
+  
   
   ````sql
   SELECT 
@@ -187,7 +187,7 @@ ORDER BY region, total_sales DESC, marketing_channel
 ### Overall Refunds
 <details>
 <summary>For each brand, which month in 2020 had the highest number of refunds, AND how many refunds did that month have?</summary> <br>
-  Insert notes for this questions here.
+  
   
   ````sql
   -- Lookup table for associated brands of products
